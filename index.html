@@ -1,95 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Life and Beyond - The Ultimate Recruitment Tool</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Life and Beyond — Financial Board Game</title>
+  <meta name="description" content="Life and Beyond: a powerful financial board game that mirrors real life. See how people think, act, and take risks under pressure." />
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom right, #e0f7fa, #fce4ec);
-      margin: 0;
-      padding: 0;
+    :root {
+      --bg:#0b1220; --card:#121a2b; --text:#e9eefc; --muted:#a9b3c9; --accent:#1677ff; --accent-2:#5aa1ff; --ring:#264a96;
     }
-    .container {
-      max-width: 800px;
-      margin: 50px auto;
-      padding: 40px 20px;
-      background: #ffffff;
-      border-radius: 12px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-    }
-    h1 {
-      text-align: center;
-      font-size: 2.5em;
-      color: #0077b6;
-      margin-bottom: 10px;
-    }
-    h2 {
-      font-size: 1.5em;
-      margin-top: 40px;
-      color: #009688;
-    }
-    p {
-      font-size: 1.1em;
-      line-height: 1.6;
-      color: #333;
-    }
-    ul {
-      color: #444;
-    }
-    .cta {
-      text-align: center;
-      margin-top: 40px;
-    }
-    .cta button {
-      padding: 15px 30px;
-      font-size: 1.1em;
-      background: #007bff;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-    .cta button:hover {
-      background: #0056b3;
+    *{box-sizing:border-box} body{margin:0;background:linear-gradient(180deg,#0b1220 0%,#0f1630 100%);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    .wrap{max-width:1000px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:8px}
+    header img{width:160px;height:auto;border-radius:16px;box-shadow:0 8px 30px rgba(0,0,0,.35)}
+    header .title h1{margin:0;font-size:28px;letter-spacing:.3px}
+    header .title p{margin:6px 0 0;color:var(--muted)}
+    .hero{margin:28px auto 16px;text-align:center}
+    .hero h2{margin:0 0 10px;font-size:26px}
+    .hero p{margin:0 auto;max-width:720px;color:var(--muted);font-size:18px;line-height:1.55}
+    .cta{margin:22px auto 0;text-align:center}
+    .btn{display:inline-block;padding:12px 22px;border-radius:12px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;box-shadow:0 8px 20px rgba(22,119,255,.35)}
+    .btn:hover{background:var(--accent-2)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:26px 0}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:16px;box-shadow:0 10px 24px rgba(0,0,0,.25)}
+    .card h3{margin:0 0 8px;font-size:18px}
+    .card p{margin:0;color:var(--muted);line-height:1.5}
+    .section{margin:34px 0}
+    .how{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .step{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:16px}
+    .step .num{display:inline-block;background:#1c2742;border:1px solid var(--ring);color:#cfe2ff;padding:4px 10px;border-radius:999px;font-size:12px;margin-bottom:10px}
+    footer{margin:36px 0 8px;text-align:center;color:#89a0c6;font-size:14px}
+    @media (max-width:860px){
+      .grid,.how{grid-template-columns:1fr}
+      header{flex-direction:column}
+      header img{width:130px}
+      .hero h2{font-size:22px}
+      .hero p{font-size:16px}
     }
   </style>
 </head>
 <body>
-  <div style="text-align: center; margin-top: 30px;">
-    <img src="image.png" alt="Life and Beyond Logo" style="max-width: 300px; height: auto;">
+  <div class="wrap">
+
+    <header>
+      <img src="image.png" alt="Life and Beyond Logo" />
+      <div class="title">
+        <h1>Life and Beyond</h1>
+        <p>A financial board game that feels like real life.</p>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h2>Decisions, risk, negotiation — all on the table</h2>
+      <p>
+        Life and Beyond reveals how people think, react, and interact under pressure.
+        Players buy, build, negotiate, and balance risk vs. reward — just like the real world.
+        Perfect for families, friends, team-building, and even recruitment assessment.
+      </p>
+      <div class="cta">
+        <a class="btn" href="mailto:lifeandbeyond.boardgame@gmail.com">Contact Us for a Demo</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="grid">
+        <div class="card">
+          <h3>Real-World Dynamics</h3>
+          <p>Taxes, leverage, alliances, and consequences. Every move can help or hurt the whole table.</p>
+        </div>
+        <div class="card">
+          <h3>Reveals Behavior</h3>
+          <p>See who plays safe, who takes smart risks, and who can lead under pressure.</p>
+        </div>
+        <div class="card">
+          <h3>Endlessly Replayable</h3>
+          <p>Sessions can run short or epic. The meta shifts with the people playing.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 style="margin:0 0 12px;">How it works</h2>
+      <div class="how">
+        <div class="step">
+          <span class="num">Step 1</span>
+          <h3>Set Up</h3>
+          <p>Lay out the board, place pins, and seed the tax fund. Everyone starts equal — choices change everything.</p>
+        </div>
+        <div class="step">
+          <span class="num">Step 2</span>
+          <h3>Play & Negotiate</h3>
+          <p>Buy, build, and negotiate. Use knowledge of the rules to find legal edges and creative plays.</p>
+        </div>
+        <div class="step">
+          <span class="num">Step 3</span>
+          <h3>Evaluate Outcomes</h3>
+          <p>Count assets and impact. Who grew value, who stabilized the “economy,” and who only looked rich?</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 style="margin:0 0 12px;">Get a demo</h2>
+      <p style="color:var(--muted);max-width:720px;">
+        Want to see the game in action or use it for a team or hiring event?
+        Click below and we’ll coordinate a quick walkthrough.
+      </p>
+      <div class="cta">
+        <a class="btn" href="mailto:lifeandbeyond.boardgame@gmail.com">Contact Us for a Demo</a>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Life and Beyond · Contact: lifeandbeyond.boardgame@gmail.com
+    </footer>
   </div>
 
-  <div class="container">
-    <h1>Life and Beyond</h1>
-    <p><strong>The Ultimate Behavioral Assessment Tool for Recruitment</strong></p>
-
-    <p>
-      What if you could see how your job candidates think, react, compete, and cooperate—all before the first interview?
-      <br><br>
-      <strong>Life and Beyond</strong> is more than a game. It’s a realistic, immersive financial simulation that reveals who people really are under pressure, in opportunity, and in conflict.
-    </p>
-
-    <h2>Why Use It in Hiring?</h2>
-    <ul>
-      <li>How candidates handle pressure, risk, and strategy</li>
-      <li>Who collaborates—and who manipulates</li>
-      <li>Who leads, who follows, and who folds under stress</li>
-      <li>How financial decisions reflect real personality traits</li>
-    </ul>
-
-    <h2>Trusted by Smart Employers</h2>
-    <p>
-      The best companies know that CVs and interviews only show a fraction of the picture. <br>
-      <em>Life and Beyond</em> fills in the rest.
-    </p>
-
-    <div class="cta">
-      <p><strong>Ready to transform your hiring process?</strong></p>
-      <button onclick="window.location.href='mailto:lifeandbeyond.boardgame@gmail.com'">Contact Us for a Demo</button>
-    </div>
-  </div>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
